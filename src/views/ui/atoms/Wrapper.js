@@ -1,13 +1,5 @@
 import styled, { css } from 'styled-components';
-import {
-  space,
-  width,
-  border,
-  borderColor,
-  borderRadius,
-  color,
-  position,
-} from 'styled-system';
+import { palette, spacing } from '@material-ui/system';
 
 const Wrapper = styled.div`
   ${props =>
@@ -55,13 +47,8 @@ const Wrapper = styled.div`
       max-width: ${props.maxWidth};
     `};
 
-  ${space};
-  ${width};
-  ${color};
-  ${border};
-  ${borderColor};
-  ${borderRadius};
-  ${position};
+  ${spacing};
+  ${palette};
 `;
 
 export default Wrapper;
